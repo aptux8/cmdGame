@@ -13,8 +13,12 @@ if %var%==n goto de
 if %var%==s goto de
 if %var%==e goto l44
 if %var%==w goto detrain
-:de
+:d
 echo you cant do that
+pause
+call l43
+:de
+echo you cant go that way
 pause
 call l43
 :detrain

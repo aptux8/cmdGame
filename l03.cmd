@@ -11,16 +11,20 @@ if %var%==n goto de
 if %var%==s goto l04
 if %var%==e goto de
 if %var%==w goto l02
-:de
+:d
 echo you cant do that
+pause
+call l03.cmd
+:de
+echo you cant go that way
 pause
 call l03.cmd
 pause
 :l02
 call l02.cmd
 pause
-:l08
-call l08.cmd
+:l04
+call l04.cmd
 pause
 :end
 :# L09 L02 L03

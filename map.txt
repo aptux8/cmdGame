@@ -12,9 +12,6 @@
 :#                                  L47/L49
 :#                                    l48
 :#
-:#
-:#
-:#
 :# L0 intro field
 :# L1 woods
 :# L2 tree

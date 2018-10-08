@@ -14,8 +14,13 @@ if %var%==n goto de
 if %var%==s goto de
 if %var%==jump-e goto l44
 if %var%==jump-w goto endgame3.cmd
-:de
+if %var%==se goto l09
+:d
 echo you cant do that
+pause
+call l49
+:de
+echo you cant go that way
 pause
 call l49
 :l44

@@ -12,8 +12,11 @@ if %var%==n goto de
 if %var%==s goto l11
 if %var%==e goto l13
 if %var%==w goto l19
+:d
+echo    you cant do that
+call l12.cmd
 :de
-echo you cant do that
+echo    you cant go that way
 pause
 call l12.cmd
 pause

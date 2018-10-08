@@ -14,8 +14,12 @@ if %var%==n goto l49
 if %var%==s goto de
 if %var%==e goto de
 if %var%==w goto de
-:de
+:d
 echo you cant do that
+pause
+call l48
+:de
+echo you cant go that way
 pause
 call l48
 :l49
