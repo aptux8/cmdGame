@@ -6,12 +6,18 @@ echo      N
 echo    W-l-E
 echo      S
 echo.
+echo.
+echo       The grass becomes deeper at the NW end of the field.
+echo          The farther North you go the less you can see.
+echo.
+echo.
 set /p var=$/    S E $/  
 if %var%==n goto de
 if %var%==s goto l08
 if %var%==e goto l02
 if %var%==w goto de
-if %var%==nw goto l49
+if %var%==nw goto l59
+if %var%==look goto look
 :d
 echo    you cant do that
 call l09.cmd
@@ -20,6 +26,15 @@ echo    you cant go that way
 pause
 call l09.cmd
 pause
+:look
+echo.
+echo.
+echo          You can see a break in the trees to the NW.
+echo    The gap looks out of place with the solid wall of pines.
+echo                 It might be a fallen tree.
+echo.
+pause
+call l09.cmd
 :l02
 call l02.cmd
 pause

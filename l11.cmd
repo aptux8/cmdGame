@@ -6,13 +6,15 @@ echo      N
 echo    W-l-E
 echo      S
 echo.
-echo     You are in a field surounded by trees.
+echo.
+echo      story line for the tree
+echo.
 echo.
 set /p var=$/      N S E W $/  
-if %var%==n goto l02
-if %var%==s goto l06
-if %var%==e goto l04
-if %var%==w goto l08
+if %var%==n goto l22
+if %var%==s goto l16
+if %var%==e goto l24
+if %var%==w goto l28
 if %var%==look goto look
 :d
 echo    you cant do that
@@ -24,9 +26,9 @@ pause
 call l11.cmd
 :look
 echo.
-echo             To the NW a Mountain lies
-echo     and NE a small building with boarded windows
-echo      In every other direction trees circle you.
+echo     tree       
+echo     story
+echo     line
 echo.
 pause
 call l01.cmd
@@ -43,11 +45,9 @@ pause
 call l08.cmd
 pause
 :End
-:# L09 L02 L03
-:# L08 L01 L04
-:# L07 L06 L05
-:#	   L19 L12 L13
-:#	   L18 L11 L14
+:#         l20 l27 l25
+:#	   L29 L22 L23
+:#	   L28 L11 L24
 :#	   L17 L16 L15
 :# Hex code
 :#	0	black

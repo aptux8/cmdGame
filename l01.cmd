@@ -6,7 +6,7 @@ echo      N
 echo    W-l-E
 echo      S
 echo.
-echo     You are in a field surounded by trees.
+echo     You are in a field, surrounded by trees.
 echo.
 set /p var=$/      N S E W $/  
 if %var%==n goto l02
@@ -15,18 +15,18 @@ if %var%==e goto l04
 if %var%==w goto l08
 if %var%==look goto look
 :d
-echo you cant do that
+echo you can't do that
 pause
 call l01.cmd
 :de
-echo you cant go that way
+echo you can't go that way
 pause
 call l01.cmd
 :look
 echo.
-echo             To the NW a Mountain lies
-echo     and SE a small building with boarded windows
-echo      In every other direction trees circle you.
+echo                 A mountain lies to the NW
+echo   you see a small building with boarded windows to the NE
+echo          In every other direction trees circle you.
 echo.
 pause
 call l01.cmd

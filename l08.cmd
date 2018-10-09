@@ -6,6 +6,11 @@ echo      N
 echo    W-l-E
 echo      S
 echo.
+echo.
+echo       The field is bright in contrast to
+echo       the dark wall of trees to the West.
+echo.
+echo.
 set /p var=$/  N S E $/  
 if %var%==n goto l09
 if %var%==s goto l07

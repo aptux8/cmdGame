@@ -6,6 +6,9 @@ echo      N
 echo    W-l-E
 echo      S
 echo.
+echo        From hear you can see a not so far off mountain to the NW.
+echo       There doesn't appear to be an obvious route to the mountain.
+echo.
 set /p var=$/   N E $/  
 if %var%==n goto l08
 if %var%==s goto de

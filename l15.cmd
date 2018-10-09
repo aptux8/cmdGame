@@ -6,16 +6,35 @@ echo      N
 echo    W-l-E
 echo      S
 echo.
+echo.
+echo                  A well traveled path appears to the East.
+echo                      The forest is thick to the North
+echo                      and the trail seams to dissipate.
+echo        To the West large twisted tree roots spill out over the trail.
+echo.
+echo.
 set /p var=$/  N E W $/  
 if %var%==n goto l14
 if %var%==s goto de
 if %var%==e goto l40
 if %var%==w goto l16
+if %var%==look goto look
 :d
-echo    you cant do that
+echo    you can't do that
 call l15.cmd
 :de
-echo    you cant go that way
+echo    you can't go that way
+pause
+call l15.cmd
+pause
+:look
+echo.
+echo.
+echo                  The tangled mess of wood looks passable.
+echo      except for a few places worn smooth from being trodden on over time 
+echo               the path is indiscernable from the suroundings.
+echo.
+echo.  
 pause
 call l15.cmd
 pause

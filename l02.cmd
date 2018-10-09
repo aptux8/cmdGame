@@ -6,7 +6,10 @@ echo      N
 echo    W-l-E
 echo      S
 echo.
-echo "A path leads to the West & to the East"
+echo          A narrow path leads to the West. 
+echo            To the East a grasy field.
+echo.
+echo.
 set /p var=$/     S E W $/  
 if %var%==n goto de
 if %var%==s goto l01
