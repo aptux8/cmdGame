@@ -6,10 +6,16 @@ echo      N
 echo    W-l-E
 echo      S
 echo.
-set /p var=$/    S W $/  
+echo.
+echo                The path widens to the East.
+echo       To the South the field becomes shorter and green.
+echo     To the West a mountain top rises above the tree tops.
+echo.
+echo.
+set /p var=$/    S E W $/  
 if %var%==n goto de
 if %var%==s goto l04
-if %var%==e goto de
+if %var%==e goto l60
 if %var%==w goto l02
 :d
 echo you cant do that
@@ -25,6 +31,9 @@ call l02.cmd
 pause
 :l04
 call l04.cmd
+pause
+:l60
+call l60.cmd
 pause
 :end
 :# L09 L02 L03

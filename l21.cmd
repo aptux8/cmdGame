@@ -7,8 +7,7 @@ echo    W-l-E
 echo      S
 echo.
 echo.
-echo      Tangled roots wrap around the base of the tree.
-echo       An opening in the foresest floor lies ahead.
+echo      story line for the tree
 echo.
 echo.
 set /p var=$/      N S E W $/  
@@ -27,19 +26,14 @@ pause
 call l11.cmd
 :look
 echo.
-echo     Crudely hacked away at the roots form an opening ahead.
+echo     tree       
+echo     story
+echo     line
 echo.
 pause
 call l01.cmd
-:l22
-cls
-echo.
-echo.
-echo     Crudely hacked away at the roots form an opening ahead.
-echo.
-echo.
-pause
-call l22.cmd
+:l02
+call l02.cmd
 pause
 :l04
 call l04.cmd
@@ -51,7 +45,7 @@ pause
 call l08.cmd
 pause
 :End
-:#     l20 l27 l25
+:#         l20 l27 l25
 :#	   L29 L22 L23
 :#	   L28 L11 L24
 :#	   L17 L16 L15

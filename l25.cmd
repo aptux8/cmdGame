@@ -18,7 +18,6 @@ if %var%==n goto l14
 if %var%==s goto de
 if %var%==e goto l40
 if %var%==w goto l16
-if %var%==nw goto lost
 if %var%==look goto look
 :d
 echo    you can't do that
@@ -39,17 +38,6 @@ echo.
 pause
 call l15.cmd
 pause
-:lost
-echo.
-echo.
-echo                         You can't find a path.
-echo         Avoiding large trees and dense undergrowth you become lost. 
-echo                    You seam to be going in circles.
-echo.
-echo.  
-pause
-call l15.cmd
-pause
 :l14
 call l14.cmd
 pause
@@ -60,8 +48,10 @@ pause
 call l40.cmd
 pause
 :end
-:# L09 L02 L03
-:# L08 L01 L04
+:#     l20 l27 l25
+:#	   L29 L22 L23
+:#	   L28 L11 L24
+:#	   L17 L16 L15
 :# L07 L06 L05
 :#	   L19 L12 L13
 :#	   L18 L11 L14
